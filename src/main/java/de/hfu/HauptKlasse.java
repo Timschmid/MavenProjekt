@@ -1,5 +1,9 @@
 package de.hfu;
 import java.util.Scanner;
+
+/**
+ * Klasse dient dazu, um eingaben im Upercase-Format umzuwandeln
+ */
 public class HauptKlasse{
     public static void main( String[] args ){
 	System.out.println("Geben sie einen string ein");
