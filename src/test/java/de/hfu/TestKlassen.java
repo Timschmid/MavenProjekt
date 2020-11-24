@@ -5,15 +5,12 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.UTFDataFormatException;
-
 public class TestKlassen {
 
     private Queue queue, queue2, queue3;
 
     @Before
     public void init() {
-        TestKlassen klassen = new TestKlassen();
         queue = new Queue(3);
         queue2 = new Queue(3);
         queue2.enqueue(1);
