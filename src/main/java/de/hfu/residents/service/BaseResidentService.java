@@ -18,8 +18,8 @@ public class BaseResidentService implements ResidentService {
 
   private ResidentRepository residentRepository;
   
-  public BaseResidentService(ResidentRepository repository) {
-    this.residentRepository = repository;
+  public BaseResidentService() {
+
   }
   
   /**

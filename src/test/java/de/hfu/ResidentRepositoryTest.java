@@ -14,7 +14,7 @@ public class ResidentRepositoryTest {
     public void getFilteredTest() {
         Resident filterResident = new Resident();
         ResidentReposotoryStub stub = new ResidentReposotoryStub();
-        BaseResidentService service = new BaseResidentService(stub);
+        BaseResidentService service = new BaseResidentService();
         filterResident.setFamilyName("Gunter");
         service.setResidentRepository(stub);
         assertEquals(3, service.getFilteredResidentsList(filterResident).size());
@@ -25,7 +25,7 @@ public class ResidentRepositoryTest {
     public void getFilteredTestWithWildcard() {
         Resident filterResidentWildCard = new Resident();
         ResidentReposotoryStub stub = new ResidentReposotoryStub();
-        BaseResidentService service = new BaseResidentService(stub);
+        BaseResidentService service = new BaseResidentService();
         filterResidentWildCard.setGivenName("Br*");
         service.setResidentRepository(stub);
         assertEquals(1,service.getFilteredResidentsList(filterResidentWildCard).size());
@@ -35,7 +35,7 @@ public class ResidentRepositoryTest {
     public void getFilteredTwoWildcard() {
         Resident filterResidentWildCard = new Resident();
         ResidentReposotoryStub stub = new ResidentReposotoryStub();
-        BaseResidentService service = new BaseResidentService(stub);
+        BaseResidentService service = new BaseResidentService();
         filterResidentWildCard.setGivenName("P*");
         filterResidentWildCard.setStreet("Weg*");
         service.setResidentRepository(stub);
@@ -48,7 +48,7 @@ public class ResidentRepositoryTest {
         filterResidentUnique.setGivenName("Paul");
         Resident expected = new Resident("Paul","Gunter","Straße5","Brandenburg",new Date(1950, 6, 14));
         ResidentReposotoryStub stub = new ResidentReposotoryStub();
-        BaseResidentService service = new BaseResidentService(stub);
+        BaseResidentService service = new BaseResidentService();
 
         service.setResidentRepository(stub);
         Resident filteredUnique = service.getUniqueResident(filterResidentUnique);
