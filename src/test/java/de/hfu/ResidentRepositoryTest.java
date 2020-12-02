@@ -1,7 +1,6 @@
 package de.hfu;
 
 import de.hfu.residents.domain.Resident;
-import de.hfu.residents.repository.ResidentReposotoryStub;
 import de.hfu.residents.service.BaseResidentService;
 import de.hfu.residents.service.ResidentServiceException;
 import org.junit.Test;
@@ -28,7 +27,7 @@ public class ResidentRepositoryTest {
         BaseResidentService service = new BaseResidentService();
         filterResidentWildCard.setGivenName("Br*");
         service.setResidentRepository(stub);
-        assertEquals(1,service.getFilteredResidentsList(filterResidentWildCard).size());
+        assertEquals(2,service.getFilteredResidentsList(filterResidentWildCard).size());
     }
 
     @Test
