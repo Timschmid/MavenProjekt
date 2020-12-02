@@ -13,7 +13,6 @@ public class HauptKlasse{
 		String input = scan.nextLine();
 		System.out.println("Ausgabe:" + input.toUpperCase());
 
-
     }
 
 
