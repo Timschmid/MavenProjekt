@@ -17,7 +17,7 @@ public class ResidentReposotoryStub implements ResidentRepository {
         resutlt.add(new Resident("Paul","Gunter","Straße5","Brandenburg",new Date(1950, 6, 14)));
         resutlt.add(new Resident("Patrizia","Gunter","Weg4","Bremen",new Date(1999, 12, 21)));
         resutlt.add(new Resident("Brigitte","Marlokoi","Straße21","Frakfurt",new Date(2001, 3, 21)));
-        resutlt.add(new Resident("Brigitte","Sanja","Straße212","Brandenburg",new Date(2001, 3, 21)));
+        resutlt.add(new Resident("Brigitte","Sanja","Schulstraße","Brandenburg",new Date(2001, 3, 21)));
     }
 
     @Override

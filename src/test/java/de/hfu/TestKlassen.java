@@ -24,7 +24,6 @@ public class TestKlassen {
         queue3.enqueue(3);
     }
 
-
     @Test
     public void istErstesHalbjahrTest() {
         assertTrue(Util.istErstesHalbjahr(6));
