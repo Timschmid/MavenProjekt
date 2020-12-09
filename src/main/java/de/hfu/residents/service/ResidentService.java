@@ -14,3 +14,8 @@ public interface ResidentService {
   List<Resident> getFilteredResidentsList(Resident filterResident);
 
 }
+
+
+
+
+//Teständerungen<
