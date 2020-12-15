@@ -4,6 +4,8 @@ import java.util.List;
 
 import de.hfu.residents.domain.Resident;
 
+//Hier eine änderung
+
 /**
  * @author Stefan Betermieux
  */
@@ -14,3 +16,8 @@ public interface ResidentService {
   List<Resident> getFilteredResidentsList(Resident filterResident);
 
 }
+
+
+
+
+//Teständerungen
